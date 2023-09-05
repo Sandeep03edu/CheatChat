@@ -13,7 +13,7 @@ const path = require("path");
 
 dotenv.config();
 
-// connectDb();
+connectDb();
 
 const PORT = process.env.PORT;
 
