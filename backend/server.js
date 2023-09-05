@@ -48,7 +48,7 @@ app.use(errorHandler);
 // ************************* Socket.io connection *********************************
 const io = require("socket.io")(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://cheat-chat-app.onrender.com",
   },
   pingTimeout: 60000, // Amount of time socket will wait before disconnecting
 });
