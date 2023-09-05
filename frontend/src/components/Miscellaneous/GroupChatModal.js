@@ -68,7 +68,7 @@ const GroupChatModal = ({ children }) => {
         },
       };
       const { data } = await axios.post(
-        `http://localhost:5000/api/chat/group`,
+        `http://cheat-chat.onrender.com/api/chat/group`,
         {
           name: groupChatName,
           users: JSON.stringify(selectedUsers.map((u) => u._id)),
@@ -113,7 +113,7 @@ const GroupChatModal = ({ children }) => {
       };
 
       const { data } = await axios.get(
-        `http://localhost:5000/api/user?search=${query}`,
+        `http://cheat-chat.onrender.com/api/user?search=${query}`,
         config
       );
 

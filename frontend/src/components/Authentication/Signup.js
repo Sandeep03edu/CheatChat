@@ -108,7 +108,7 @@ const Signup = () => {
         },
       };
       const { data } = await axios.post(
-        "http://localhost:5000/api/user",
+        "http://cheat-chat.onrender.com/api/user",
         {
           name,
           email,

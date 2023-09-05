@@ -49,7 +49,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
       };
 
       const { data } = await axios.get(
-        `http://localhost:5000/api/user?search=${query}`,
+        `http://cheat-chat.onrender.com/api/user?search=${query}`,
         config
       );
 
@@ -80,7 +80,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
         },
       };
       const { data } = await axios.put(
-        `http://localhost:5000/api/chat/rename`,
+        `http://cheat-chat.onrender.com/api/chat/rename`,
         {
           chatId: selectedChat._id,
           chatNewName: groupChatName,
@@ -137,7 +137,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
         },
       };
       const { data } = await axios.put(
-        `http://localhost:5000/api/chat/groupadd`,
+        `http://cheat-chat.onrender.com/api/chat/groupadd`,
         {
           chatId: selectedChat._id,
           userId: addToGroup._id,
@@ -185,7 +185,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
         },
       };
       const { data } = await axios.put(
-        `http://localhost:5000/api/chat/groupremove`,
+        `http://cheat-chat.onrender.com/api/chat/groupremove`,
         {
           chatId: selectedChat._id,
           userId: removeFromGroup._id,
