@@ -12,7 +12,6 @@
 /frontend/coverage
 
 # production
-/frontend/build
 
 # dotenv file
 .env
