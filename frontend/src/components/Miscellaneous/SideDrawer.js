@@ -149,7 +149,7 @@ const SideDrawer = () => {
         </Tooltip>
 
         <Text fontSize="2xl" fontFamily="Work sans">
-          Cheat Chat
+          Sky Chat
         </Text>
 
         <div>

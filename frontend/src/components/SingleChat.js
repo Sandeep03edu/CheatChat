@@ -21,6 +21,7 @@ import Lottie from "react-lottie";
 import animationData from "../animation/typing";
 
 const ENDPOINT = "http://cheat-chat.onrender.com";
+// const ENDPOINT = "http://3.110.183.17:8080/chat";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
@@ -52,8 +53,10 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
   useEffect(() => {
     console.log("Creating socket for user");
     socket = io(ENDPOINT);
+
     socket.emit("setup", user);
     socket.on("Connected", () => {
+      console.log("Connected!!");
       setSockedConnected(true);
     });
 
